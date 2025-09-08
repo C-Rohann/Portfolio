@@ -1,0 +1,32 @@
+
+---
+
+## 🚀 How It Works
+1. User speaks a **command** in their preferred language.  
+2. Smartphone converts voice → text and sends it via **Bluetooth**.  
+3. ESP32 receives the text and matches it with a **gesture command**.  
+4. The **servo motor rotates** to open/close the bionic hand.  
+
+---
+
+## 📷 Demo (Add Images Here)
+### 3D Printed Hand
+![3D Hand](Procedure/3d_hand.png)
+
+### Hardware Setup
+![Hardware](Procedure/hardware.png)
+
+### Working Video
+![App](Procedure/app.png)
+
+---
+
+## 🔧 Example Commands
+| Command (English) | Hindi (हिंदी) | Spanish (Español) | Action |
+|-------------------|---------------|-------------------|--------|
+| `grasp` | `पकड़` | `agarrar` | Close hand |
+| `release` | `खोलो` | `abrir` | Open hand |
+
+---
+
+## 📂 Repository Structure
