@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore Maharashtra Forts</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #ffe0b3; /* Light saffron background */
+      color: #333;
+      padding: 0;
+    }
+
+    header {
+      background: url('maratha-bg.jpg') no-repeat center center/cover;
+      color: white;
+      text-align: left;
+      padding: 100px 20px;
+      position: relative;
+    }
+
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 0;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 1;
+      margin-left: 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      background: linear-gradient(45deg, #ffd54f, #ff7043);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.3em;
+      max-width: 700px;
+      color: #ffecb3;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .content-wrapper {
+      background-color: #fffaf0;
+      max-width: 1200px;
+      margin: 30px auto;
+      border: 8px solid #ffb84d;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      padding-bottom: 20px;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .history {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .history h2 {
+      color: #b23c17;
+      margin-bottom: 15px;
+      font-size: 1.8em;
+    }
+
+    .history p {
+      line-height: 1.7;
+      margin-bottom: 18px;
+    }
+
+    .fort-box {
+      background-color: #fff;
+      margin-top: 30px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .fort-box h2 {
+      margin: 0;
+      color: #d84315;
+    }
+
+    .btn {
+      background-color: #ff5722;
+      color: #fff;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e64a19;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #ffcc80;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      .fort-box {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .btn {
+        margin-top: 10px;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      header h1,
+      header p {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full-width Header Outside Wrapper -->
+  <header>
+    <h1>Explore Maharashtra Forts</h1>
+    <p>Uncover the majestic heritage and unmatched bravery of the Marathas through their timeless forts.</p>
+  </header>
+
+  <!-- Content Wrapper with Border and Light Background -->
+  <div class="content-wrapper">
+
+    <section>
+      <div class="history">
+        <h2>About Maratha History</h2>
+        <p>The Maratha Empire, founded in the 17th century by the visionary Chhatrapati Shivaji Maharaj, was known for its remarkable military strategies, administrative skills, and the spirit of swarajya (self-rule). The Marathas established a strong and decentralized governance system that empowered local communities while challenging foreign rulers like the Mughals and the British.</p>
+        <p>Shivaji Maharaj strategically built and reinforced forts like Raigad, Rajgad, Pratapgad, Torna, and Sindhudurg, not only as military bases but also as centers of administration. These forts were often built atop hills and cliffs, taking full advantage of the terrain for defense.</p>
+        <p>After Shivaji Maharaj, his son Chhatrapati Sambhaji Maharaj courageously defended the empire against the Mughal invasion. Despite immense pressure, he upheld the ideals of the Maratha legacy until his tragic martyrdom.</p>
+        <p>The Peshwas, led initially by Balaji Vishwanath and then famously by Bajirao I, carried the Maratha influence far into North India. They played a crucial role in expanding the empire and maintaining its administrative and military strength. Their contributions made Pune a cultural and political hub during the 18th century.</p>
+        <p>Today, these forts and their stories stand as proud reminders of the bravery, resilience, and strategic genius of the Maratha rulers.</p>
+      </div>
+
+      <!-- Fort Links -->
+      <div class="fort-box"><h2>Raigad Fort</h2><a href="raigad.html" class="btn" target="_blank">Click Here</a></div>
+      <div class="fort-box"><h2>Sinhagad Fort</h2><a href="sinhagad.html" class="btn" target="_blank">Click Here</a></div>
+      <div class="fort-box"><h2>Pratapgad Fort</h2><a href="pratapgad.html" class="btn" target="_blank">Click Here</a></div>
+      <div class="fort-box"><h2>Rajgad Fort</h2><a href="rajgad.html" class="btn" target="_blank">Click Here</a></div>
+      <div class="fort-box"><h2>Shivneri Fort</h2><a href="shivneri.html" class="btn" target="_blank">Click Here</a></div>
+      <div class="fort-box"><h2>Torna Fort</h2><a href="torna.html" class="btn" target="_blank">Click Here</a></div>
+      <div class="fort-box"><h2>Lohagad Fort</h2><a href="lohagad.html" class="btn" target="_blank">Click Here</a></div>
+      <div class="fort-box"><h2>Purandar Fort</h2><a href="purandar.html" class="btn" target="_blank">Click Here</a></div>
+      <div class="fort-box"><h2>Panhala Fort</h2><a href="panhala.html" class="btn" target="_blank">Click Here</a></div>
+      <div class="fort-box"><h2>Harishchandragad Fort</h2><a href="harishchandragad.html" class="btn" target="_blank">Click Here</a></div>
+      <div class="fort-box"><h2>Sindhudurg Fort</h2><a href="sindhudurg.html" class="btn" target="_blank">Click Here</a></div>
+
+    </section>
+
+    <footer>
+      &copy; 2025 Explore Maharashtra Forts | Designed with ♥ for history lovers
+    </footer>
+
+  </div>
+
+</body>
+</html>
