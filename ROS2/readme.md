@@ -45,7 +45,7 @@ Follow these steps to set up the workspace and build the packages.
 
 2.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/](https://github.com/)[Your_Username]/[Your_Repo_Name].git
+    git clone [https:https://github.com/C-Rohann/Portfolio/edit/main/ROS2)]
     ```
 
 3.  **Install Dependencies:**
