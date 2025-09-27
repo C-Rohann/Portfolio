@@ -101,7 +101,7 @@ ros2 launch my_robot.urdf display.launch.xml
 ## 📝 License
 This project is licensed under the MIT License-see the LICENSE file for details.
 
-📧 Contact
+## 📧 Contact
 If you have any questions, feel free to reach out:
 
 GitHub: https://github.com/C-Rohann
