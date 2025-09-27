@@ -1,78 +1,109 @@
-# 🤖 Project Title: Autonomous Mobile Robot with Manipulator
+# 🤖 My ROS 2 Projects Portfolio
 
+A collection of personal projects and packages developed using the **Robot Operating System 2 (ROS 2)** framework. This repository showcases my work in robotics, ranging from simple tutorials and simulations to complex navigation and perception tasks.
 
+## 🌟 Overview
 
-A ROS 2 package/workspace focused on **robot simulation, visualization, and control**. This project integrates a custom **URDF** model, deploys it in a **Gazebo** simulation environment with custom **plugins**, and enables real-time interaction and control via **ROS 2** using **ros2\_control** and visualization in **RViz**.
+This folder contains several independent ROS 2 workspaces or packages. Each project is designed to demonstrate different aspects of the ROS 2 ecosystem, including:
 
----
-
-## 🚀 Key Features
-
-* **Custom URDF Design**: A complete and accurate kinematic and visual description of the **my_robot**.
-* **Gazebo Simulation**: Realistic simulation environment including world files, sensor definitions, and physics configurations.
-* **Custom Gazebo Plugins**: Extend the simulation with custom logic for **Visualization using Camera**.
-* **ROS 2 Control Integration (`ros2_control`)**: Standardized hardware interface for robust and flexible joint control using various controllers (e.g., position, velocity, effort).
-* **RViz Visualization**: Detailed and dynamic visualization of the robot's state, sensor data, and planned paths.
-* **Modular ROS 2 Package Structure**: Organized for easy expansion and integration into larger systems.
+* **Custom Nodes:** Publishers, subscribers, and service clients/servers.
+* **Launch Files:** Using Python or XML to orchestrate multiple nodes.
+* **Simulation:** Integration with **Gazebo** or **Rviz**.
+* **Robot Navigation/Manipulation:** Specific algorithms or applications.
+* **[Add your main focus here, e.g., Computer Vision, Teleoperation]**
 
 ---
 
-## 🛠️ Prerequisites
+## 📂 Folder Structure
 
-This project requires a working installation of **ROS 2 [Humble/Iron/Rolling]** and the necessary tools.
+This repository is a collection of several independent ROS 2 projects. Each folder listed below typically represents a self-contained ROS 2 workspace or a single main package.
 
-* **Operating System**: Ubuntu [22.04/20.04] (Recommended)
-* **ROS 2 Distribution**: Jazzy
-* **Gazebo Simulator**: Gazebo Hormonic
-* **Dependencies**:
-    * `ros-dev-tools`
-    * `ros-[distro]-gazebo-ros2-control`
-    * `ros-[distro]-xacro`
-    * `ros-[distro]-rviz2`
-    * **[Any other specific dependencies]**
+```text
+ros2_projects/
+├──my_robot
+│   ├── src/
+│   ├── include/
+│   ├── package.xml
+│   └── CMakeLists.txt
+├──my_bot
+│   ├── src/
+│   ├── launch/
+│   ├── config/
+├── README.md
+└── LICENSE
+```
 
----
 
-## 📂 Installation
 
-Follow these steps to set up the workspace and build the packages.
 
-1.  **Create a ROS 2 Workspace:**
-    ```bash
-    mkdir -p ~/ros2_ws/src
-    cd ~/ros2_ws/src
-    ```
+### Key Projects Highlighted:
 
-2.  **Clone the Repository:**
-    ```bash
-    git clone [https:https://github.com/C-Rohann/Portfolio/edit/main/ROS2)]
-    ```
+| Project Name | Description | Key Features | ROS 2 Distribution |
+| :--- | :--- | :--- | :--- |
+| **AMR With Manipulating ARM** | Inverse Kinematics solution for a 3-DOF manipulator. | Free Movement in gazebo for different operations | jazzy |
 
-3.  **Install Dependencies:**
-    ```bash
-    sudo apt update
-    rosdep install --from-paths src --ignore-src -r -y
-    ```
-
-4.  **Build the Workspace:**
-    ```bash
-    cd ~/ros2_ws
-    colcon build
-    ```
-
-5.  **Source the Setup File:**
-    ```bash
-    source install/setup.bash
-    ```
 
 ---
 
-## ⚙️ Usage and Execution
+## 🛠 Prerequisites
 
-### 1. Launch the Gazebo Simulation
+Before using any of the projects, ensure you have the following installed:
 
-This launch file will start **Gazebo**, load the robot's **URDF**, and spawn the robot in the defined world.
+* **Operating System:** Ubuntu **[e.g., 22.04 LTS]**
+* **ROS 2 Distribution:** **Jazzy Jalisco.**
+    * [Link to ROS 2 Installation Guide](https://docs.ros.org/en/jazzy/Releases.html)
+
+
+---
+
+## 🚀 Setup and Installation
+
+Follow these steps to clone the repository and build the projects within your ROS 2 environment.
+
+### 1. Clone the Repository
+
+Navigate to your ROS 2 workspace 
 
 ```bash
-ros2 launch my_robot.urdf gazebo_sim.launch.py
+cd ~/ros2_ws/src
+git clone ~/ros2_ws/src
+```
 
+## 2. Install Dependencies
+Before building, resolve any dependencies using rosdep:
+
+```bash
+cd ~/ros2_ws
+rosdep install --from-paths src --ignore-src -r -y
+```
+
+3. Build the Workspace
+Compile all packages using colcon build:
+
+```bash
+cd ~/ros2_ws
+colcon build
+```
+## ▶️ Usage (Running a Project)
+1. Source the Setup File
+Always remember to source the workspace before running any executables:
+
+```bash
+source ~/ros2_ws/install/setup.bash
+```
+## 2. Run a Specific Project
+To run a launch file for a specific project, use the following command (replacing [package_name] and [launch_file] with the actual names):
+
+```bash
+ros2 launch my_robot.urdf display.launch.xml
+```
+
+## 📝 License
+This project is licensed under the MIT License-see the LICENSE file for details.
+
+📧 Contact
+If you have any questions, feel free to reach out:
+
+GitHub: https://github.com/C-Rohann
+
+Email: rohanchavan4101@gmail.com
