@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Gazebo simulation parameters -->
+  <xacro:property name="robot_namespace" value="my_bot"/>
+  <xacro:property name="publish_rate" value="50"/>
+
+  <!-- Differential Drive Plugin -->
+  <gazebo>
+    <plugin name="gazebo_ros_diff_drive" filename="libgazebo_ros_diff_drive.so">
+      <ros>
+        <namespace>${robot_namespace}</namespace>
+      </ros>
+      <updateRate>${publish_rate}</updateRate>
+
+      <!-- Left and Right wheel joints -->
+      <leftJoint>left_wheel_1</leftJoint>
+      <rightJoint>right_wheel_1</rightJoint>
+
+      <!-- Wheel separation and radius -->
+      <wheelSeparation>0.11</wheelSeparation> <!-- distance between wheels in meters -->
+      <wheelRadius>0.04</wheelRadius>       <!-- wheel radius in meters -->
+
+      <!-- Odometry settings -->
+      <odometryFrame>odom</odometryFrame>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <publishWheelTF>true</publishWheelTF>
+
+      <!-- Command and odom topics -->
+      <cmdVelTopic>cmd_vel</cmdVelTopic>
+      <odometryTopic>odom</odometryTopic>
+    </plugin>
+  </gazebo>
+
+  <!-- Caster Wheel Friction -->
+  <gazebo reference="caster_wheel_1">
+    <mu1 value="0.2"/>
+    <mu2 value="0.2"/>
+  </gazebo>
+
+</robot>
