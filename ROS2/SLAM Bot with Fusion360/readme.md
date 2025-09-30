@@ -77,16 +77,6 @@ This includes:
 ```bash
 ros2 launch my_bot gazebo_world.launch.py
 ```
-2. Start the SLAM Node
-
-```bash
-ros2 launch cartographer_ros cartographer.launch.py
-```
-3. Visualize in RViz2
-   
-```bash
-ros2 launch my_bot view_navigation.launch.py
-```
 
 ### 🚧 Future Work
 
