@@ -75,7 +75,7 @@ This includes:
 1. Start Gazebo with the robot
 
 ```bash
-ros2 launch my_bot gazebo_world.launch.py
+ros2 launch my_bot display.launch.py
 ```
 
 ### 🚧 Future Work
