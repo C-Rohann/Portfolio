@@ -80,3 +80,19 @@ Press and release the ```PLAY button``` (PIN 23).
 The robot will smoothly move through all recorded steps in sequence, pausing for 2 seconds between each pose.
 
 The sequence will ```loop continuously``` until the ESP32 is reset.
+
+
+
+### 🚀 Usage Instructions ###
+**1️⃣ Initial Setup**
+
+1. Open the project file:
+```
+Projects/Teach-and-Repeat 3-Axis Robot/play_record_esp32.ino
+```
+
+2. Upload the code to your ESP32 board.
+
+3. Open the Serial Monitor (Baud Rate: 115200).
+
+4. Connect to the Bluetooth device named: ESP32_RobotArm.
