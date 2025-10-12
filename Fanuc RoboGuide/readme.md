@@ -12,11 +12,11 @@ The simulation utilizes:
 
 ## 🎥 Simulation Demonstration
 
-The following video demonstrates the core cycle: approaching the pickup point, grasping the part, moving through a clear path, and releasing the part onto the pallet.
+The following video demonstrates the core Pick and Place cycle: approaching the pickup point, grasping the part, moving through a clear path, and releasing the part onto the pallet.
 
+**[Watch the PnP Simulation Video](PNP/FanucRoboGuide_PNP.mp4)**
 
 ---
-
 ## ⚙️ Hardware and Software Configuration
 
 | Component | Model/Setting | Notes |
